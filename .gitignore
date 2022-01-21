@@ -1,5 +1,6 @@
 # there is a comment
-# Blank lines or lines starting with # or usual lines after # are ignored
+# Blank lines or lines starting with # are ignored
+# коммент в конце строки нельзя делать, только с начала строки можно
 
 # путь - то, что содержит хотя бы 1 слэш
 # / и \ - одно и то же
@@ -9,9 +10,12 @@
 # папка и файл не могут иметь полностью одинаковое имя (в одной папке)
 
 # игнорирование folder
-folder/ # папка
-/folder # папка или файл
-/folder/ # папка
+# папка
+folder/
+# папка или файл
+/folder
+# папка
+/folder/
 
 # игнорирование папки folder и .folder и файлов folder и .folder везде (но если перед . что-то есть, то оно не игнорится)
 .folder
@@ -28,5 +32,6 @@ folder2/*.txt2
 # игнорирования всех файлов с расширением txt2 в папке folder3 (и в подпапках)
 folder3/**/*.txt2
 
+**/folder2/file3.txt
 
 
