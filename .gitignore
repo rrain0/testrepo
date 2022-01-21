@@ -1,7 +1,28 @@
-smth — копия.smth
-./1/
-./2/
-/12
-/123/
-1234
-01
+# there is a comment
+# Blank lines or lines starting with # are ignored
+
+
+# / или <ничего> в начале пути - корень проекта (но не ./)
+# папка и файл не могут иметь полностью одинаковое имя
+
+# игнорирование folder
+# папка
+folder/
+# папка или файл
+/folder
+# папка
+/folder/
+
+# игнорирование папки .folder
+.folder
+
+# игнорирование папки folder2\folder2
+folder2\folder2
+
+# игнорирование file.txt
+file.txt
+
+# игнорирования всех файлов с расширением txt2 в папке folder2
+folder2/*.txt2
+
+
